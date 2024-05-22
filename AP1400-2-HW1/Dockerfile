@@ -24,13 +24,13 @@ RUN cmake .. \
     && make install
 
 # build the project
-WORKDIR /usr/src/app
-COPY . .
-RUN rm -rf build
-RUN mkdir build
-WORKDIR /usr/src/app/build
-RUN cmake ..
-RUN make
+#WORKDIR /usr/src/app
+#COPY . .
+#RUN rm -rf build
+#RUN mkdir build
+#WORKDIR /usr/src/app/build
+#RUN cmake ..
+#RUN make
 
 # CMD ["/usr/sbin/sshd","-D"]
-CMD ["./main"]
+#CMD ["./main"]
